@@ -1,2 +1,2 @@
-# epic-games-parody
+# About
 My course project
