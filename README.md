@@ -1,2 +1,0 @@
-# About
-My course project
