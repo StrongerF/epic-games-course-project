@@ -1,0 +1,63 @@
+﻿<Page x:Class="EpicGames_KozlovSergey_ISP3120.Pages.MainWindow.Users.UsersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EpicGames_KozlovSergey_ISP3120.Pages.MainWindow.Users"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UsersPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <ListView x:Name="UsersListView" BorderThickness="0" Background="Transparent" 
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel >
+                        <Image Source="{Binding Avatar}" Width="100" MaxHeight="160" Margin="0 0 10 0" DockPanel.Dock="Left"/>
+                        <StackPanel HorizontalAlignment="Right" DockPanel.Dock="Right" Width="150" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding Login}" FontSize="16" FontWeight="SemiBold"/>
+                            <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                                <TextBlock Text="Никнейм: "/>
+                                <TextBlock Text="{Binding Nickname}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                                <TextBlock Text="Баланс: "/>
+                                <TextBlock Text="{Binding BalanceString}"/>
+                            </StackPanel>
+                            <ComboBox x:Name="RoleComboBox" SelectedIndex="{Binding SelectedRoleIndexString}" 
+                                      Margin="0 5 0 0" Visibility="{Binding HigherRoleVisibility}">
+                                <ComboBoxItem Content="Пользователь"/>
+                                <ComboBoxItem Content="Разработчик игр"/>
+                                <ComboBoxItem Content="Модератор" Visibility="{Binding ModeratorVisibility}"/>
+                            </ComboBox>
+                            <StackPanel Orientation="Horizontal" Margin="0 5">
+                                <Button x:Name="UserLibraryButton" Click="UserLibraryButton_Click" 
+                                        Style="{StaticResource BlueButtonMain}" Height="30" Width="30" Margin="0 0 5 0"
+                                        Visibility="{Binding HigherRoleVisibility}">
+                                    <Image Source="/Resources/LibraryWhiteButton.png" Height="15"/>
+                                </Button>
+                                <Button x:Name="UserBalanceButton" Click="UserBalanceButton_Click" 
+                                        Style="{StaticResource BlueButtonMain}" Height="30" Width="30" Margin="0 0 5 0"
+                                        Visibility="{Binding ModeratorVisibility}">
+                                    <Image Source="/Resources/WalletButton.png" Height="15"/>
+                                </Button>
+                                <Button x:Name="UserEditButton" Click="UserEditButton_Click" 
+                                        Style="{StaticResource BlueButtonMain}" Height="30" Width="30"
+                                        Visibility="{Binding HigherRoleVisibility}">
+                                    <Image Source="/Resources/EditButton.png" Height="18"/>
+                                </Button>
+                            </StackPanel>
+                            <TextBlock Text="Деактивирован" Foreground="#951111" Visibility="{Binding IsNotActiveVisibilityString}"/>
+                        </StackPanel>
+                    </DockPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

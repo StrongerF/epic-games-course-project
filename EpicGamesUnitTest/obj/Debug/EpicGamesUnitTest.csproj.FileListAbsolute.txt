@@ -1,0 +1,38 @@
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\EpicGamesUnitTest.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\EpicGamesUnitTest.pdb
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\EpicGames_KozlovSergey_ISP3120.exe
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\EpicGames_KozlovSergey_ISP3120.pdb
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\EpicGames_KozlovSergey_ISP3120.exe.config
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.csproj.AssemblyReference.cache
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.csproj.CoreCompileInputs.cache
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.csproj.CopyComplete
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.dll
+F:\Учёба\3.2\Projects\EpicGames_KozlovSergey_ISP3120\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.pdb
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\EpicGamesUnitTest.dll
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\EpicGamesUnitTest.pdb
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\EpicGames_KozlovSergey_ISP3120.exe
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\EpicGames_KozlovSergey_ISP3120.pdb
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\EpicGames_KozlovSergey_ISP3120.exe.config
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.csproj.AssemblyReference.cache
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.csproj.CopyComplete
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.dll
+C:\Users\stron\OneDrive\Рабочий стол\epic-games-course-project\EpicGamesUnitTest\obj\Debug\EpicGamesUnitTest.pdb

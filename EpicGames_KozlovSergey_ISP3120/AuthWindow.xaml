@@ -1,0 +1,15 @@
+﻿<Window x:Class="EpicGames_KozlovSergey_ISP3120.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EpicGames_KozlovSergey_ISP3120"
+        mc:Ignorable="d"
+        Title="Авторизация Epic Games"
+        MinWidth="400" MinHeight="650"
+        Width="450" Height="700" WindowStartupLocation="CenterScreen">
+    <Grid VerticalAlignment="Center">
+        <Frame Name="AuthFrame" Padding="30"
+               NavigationUIVisibility="Hidden" MaxWidth="500"/>
+    </Grid>
+</Window>

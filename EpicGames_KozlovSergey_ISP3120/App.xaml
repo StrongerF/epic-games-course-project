@@ -1,0 +1,225 @@
+﻿<Application x:Class="EpicGames_KozlovSergey_ISP3120.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EpicGames_KozlovSergey_ISP3120"
+             StartupUri="AuthWindow.xaml">
+    <Application.Resources>
+
+
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+
+        <!--Hyperlink-->
+        <Style TargetType="Hyperlink">
+            <Setter Property="Foreground" Value="#000000" />
+        </Style>
+
+        <!--AuthTextBlock-->
+        <Style TargetType="TextBlock" x:Key="AuthTextBlock">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="0 10 0 0" />
+        </Style>
+
+        <!--BlueButton-->
+        <Style TargetType="Button" x:Key="BlueButton">
+            <Setter Property="Background" Value="#0175E4" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border" CornerRadius="{TemplateBinding Border.CornerRadius}" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#288AE8" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#4DA5FA" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#104A81"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--RedButton-->
+        <Style TargetType="Button" x:Key="RedButton">
+            <Setter Property="Background" Value="#951111" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border" CornerRadius="{TemplateBinding Border.CornerRadius}" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#a62222" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#b63333" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#840000"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--RedButtonDelete-->
+        <Style x:Key="RedButtonDelete" TargetType="Button" BasedOn="{StaticResource RedButton}">
+            <Setter Property="Border.CornerRadius" Value="3" />
+            <Setter Property="Height" Value="50" />
+        </Style>
+
+        <!--BlueButtonAuth-->
+        <Style x:Key="BlueButtonAuth" TargetType="Button" BasedOn="{StaticResource BlueButton}">
+            <Setter Property="Border.CornerRadius" Value="3" />
+            <Setter Property="Height" Value="50" />
+        </Style>
+
+        <!--BlueButtonMain-->
+        <Style x:Key="BlueButtonMain" TargetType="Button" BasedOn="{StaticResource BlueButton}">
+            <Setter Property="Border.CornerRadius" Value="3" />
+        </Style>
+
+        <!--EmptyButton-->
+        <Style x:Key="EmptyButton" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--TextBox-->
+        <Style TargetType="TextBox" x:Key="TextBoxStyle">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="#DDDDDD" />
+            <Setter Property="Padding" Value="3 4" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border x:Name="Border" CornerRadius="5" Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}"
+                                SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden"
+                                          VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#BBBBBB" />
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#888888" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--AuthTextBox-->
+        <Style TargetType="TextBox" x:Key="AuthTextBox" BasedOn="{StaticResource TextBoxStyle}">
+            <Setter Property="Margin" Value="0 5 0 0" />
+            <Setter Property="Padding" Value="10 8" />
+        </Style>
+
+        <!--PasswordBoxStyle-->
+        <Style TargetType="PasswordBox" x:Key="PasswordBoxStyle">
+            
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="#DDDDDD" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Padding" Value="3 4" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="PasswordChar" Value="*" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Border x:Name="Border" CornerRadius="5" Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}"
+                                SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden"
+                                          VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#BBBBBB" />
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#888888" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <!--AuthPasswordBox-->
+        <Style TargetType="PasswordBox" x:Key="AuthPasswordBox" BasedOn="{StaticResource PasswordBoxStyle}">
+            <Setter Property="Margin" Value="0 5 0 0" />
+            <Setter Property="Padding" Value="10 8" />
+        </Style>
+
+
+
+
+        <!--SidebarRadioButton-->
+        <Style x:Key="SidebarRadioButton" TargetType="RadioButton">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Margin" Value="10 1" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border Name="Border" Height="70" >
+                            <Grid>
+                                <Border Name="Indicator" 
+                                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                        Background="{TemplateBinding Background}"
+                                        Visibility="{TemplateBinding Visibility}"
+                                        CornerRadius="10"/>
+                                <ContentPresenter VerticalAlignment="Center" Margin="20"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#EEEEEE" />
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Background" Value="#DDDDDD" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,30 @@
+﻿<Page x:Class="EpicGames_KozlovSergey_ISP3120.Pages.AuthWindow.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EpicGames_KozlovSergey_ISP3120.Pages.AuthWindow"
+      mc:Ignorable="d" 
+      Title="AuthPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Stretch">
+            <Image Source="/Resources/EpicGamesLogo.png" Width="64" Margin="0 0 0 20"/>
+            <TextBlock Text="Войдите с помощью учётной записи Epic Games" 
+                       FontSize="18" FontWeight="Bold" 
+                       TextWrapping="Wrap" TextAlignment="Center" Margin="0 15"/>
+
+            <TextBlock Text="Логин:" Style="{StaticResource AuthTextBlock}"/>
+            <TextBox x:Name="LoginTextBox" Style="{StaticResource AuthTextBox}"/>
+            <TextBlock Text="Пароль:" Style="{StaticResource AuthTextBlock}"/>
+            <PasswordBox x:Name="PasswordTextBox" Style="{StaticResource AuthPasswordBox}"/>
+            <Button x:Name="AuthButton" Content="Войти" Margin="0 20" Style="{StaticResource BlueButtonAuth}" Click="AuthButton_Click"/>
+            <TextBlock HorizontalAlignment="Center" TextAlignment="Center">
+                У вас нет учётной записи Epic Games?<LineBreak/>
+                <Hyperlink Name="RegHyperlink" Click="RegHyperlink_Click">
+                    Зарегистрироваться
+                </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
